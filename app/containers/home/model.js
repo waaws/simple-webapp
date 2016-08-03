@@ -1,22 +1,20 @@
 module.exports = {
   namespace: 'app',
-  state:{
-  	title:'test',
-  	todo:[1,2,3,4]
-  },
+  // state:{
+  // 	title:'test',
+  // 	todo:[1,2,3,4]
+  // },
   subscriptions: [
     (send, done) => {
       setInterval(() => {
-      	// send('app:add', { payload: 'dog?' }), 1000)
-    			console.log(1)
-    			send('app:add',{})
+    			send('app:add',{},()=>{})
     	},1000)
     }
   ],
   reducers:{
   	add: (data, state) => {
-  		console.log(state)
-  		return { todo: state.todo.concat(Math.random().toString()) }
+      let todo = state.todo || [];
+  		return { todo: todo.concat(Math.random().toString()) }
   	}
   }
   // effects: {

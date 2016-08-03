@@ -1,14 +1,11 @@
 var choo = require('choo');
-
-const app = choo();
-
+var app = choo();
+var _ = require('lodash');
 // models
 app.model(require('./containers/home/model'))
 
 app.router((route) => [
   route('/', require('./containers/home/view'))
-])
+]);
 
-const tree = app.start();
-
-document.getElementById('app').appendChild(tree)
+module.exports = app;
