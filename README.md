@@ -1,7 +1,7 @@
 # Setup
 ```sh
-git clone https://github.com/waaws/simple-webapp.git {nombre-del-proyecto}
-cd {nombre-del-proyecto}
+git clone https://github.com/waaws/simple-webapp.git nombre-del-proyecto
+cd nombre-del-proyecto
 npm run setup
 ```
 
