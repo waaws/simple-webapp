@@ -1,8 +1,7 @@
-# simple-webapp
-Simple webapp
-
-###After clone setup the project
-
+# Setup
+```sh
+git clone https://github.com/waaws/simple-webapp.git {nombre-del-proyecto}
+```
 ```sh
 npm run setup
 ```
@@ -11,16 +10,3 @@ npm run setup
 ```sh
 npm start
 ```
-### Deploy it
-```sh
-npm staging
-```
-
-```sh
-npm prod
-```
-
-
-
-
-
